@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		A Form for skill++
+	</title>
+
+	<style>
+
+        h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			text-align: center;
+            text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            color:  #964B00;
+            text-emphasis-color: rgba(0, 0, 0, 0.5);
+        }
+
+		/* for the Body element - Color,
+		Font, Alignment */
+		body {
+			background-color: #5c5c5ca8;
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		/* For the Form (Color, Padding, Shadow) */
+		form {
+			background-color: rgb(180, 130, 72);
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+            border-radius: 15px;
+			box-shadow: 4px 7px 12px rgb(2, 1, 1);
+		}
+
+		/* for the form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* for the form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+
+		}
+
+		/* for the form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid rgba(255, 81, 0, 0.486);
+			border-radius: 20px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: rgb(168, 106, 35);
+			border: 1px solid #777;
+			border-radius: 20px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+
+<body background="pexels-cátia-matos-1072179.jpg">
+	<h1>SIMPLE FORM</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="Address" id="label-address">
+				Address
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="Address"
+				placeholder="Enter your Address" />
+		</div>
+
+        <div class="form-control">
+			<label for="Phone Number" id="Phone Number">
+				Phone Number
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="number"
+				id="Phone Number"
+				placeholder="Enter your Phone Number" />
+		</div>
+
+        
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Choose your field
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="Software">Software</option>
+				<option value="Hardware">Hardware</option>
+				<option value="Design">Design
+					
+				</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Choose your skill
+			</label>
+            <select name="role" id="role">
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="python">Python</option>
+                <option value="Node.js">Node.js</option>
+			</select>
+
+			
+			
+		</div>
+
+		<div class="form-control">
+			<label>Enter your password</label>
+			<input type="text"
+				id="password"
+				placeholder="Enter your password" />
+		</div>
+
+		<div class="form-control">
+			<label>Re-enter your password</label>
+			<input type="text"
+				id="password"
+				placeholder="Re-enter your password" />
+		</div>
+
+
+		<div class="form-control">
+			<label for="comment">
+				Thanks for filling out ! 
+			</label>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
